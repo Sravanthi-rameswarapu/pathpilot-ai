@@ -1,0 +1,280 @@
+// ── Demo Mode — Realistic pre-built data for all 6 agents ────────────────────
+// Used when no API key is set or quota is exhausted
+
+export const DEMO_PROFILE = {
+  name: 'Demo Student',
+  degree: 'B.Tech / B.E.',
+  year: '3rd Year',
+  targetRole: 'Software Engineer',
+  skills: ['Python', 'JavaScript', 'React', 'SQL', 'Git', 'HTML/CSS'],
+  interests: ['Web Development', 'Artificial Intelligence', 'Open Source'],
+  experience: 'Intern',
+};
+
+export const DEMO_ANALYSIS = {
+  readinessScore: 62,
+  skillLevel: 'Intermediate',
+  strengths: [
+    'Strong foundation in Python and JavaScript — both are highly in-demand',
+    'React experience gives you a head start in modern frontend development',
+    'SQL knowledge is valued across all engineering roles',
+  ],
+  improvementAreas: [
+    'Data Structures & Algorithms — critical for technical interviews',
+    'System Design fundamentals — expected at SWE interviews',
+    'Cloud platforms (AWS/GCP) — increasingly expected in job descriptions',
+  ],
+  summary:
+    'You have a solid foundation with Python, JavaScript, and React that many 3rd-year students lack. Your internship experience gives you a real edge. The main gaps are DSA depth and system design — areas you can close in 3-4 months with focused practice.',
+  careerFit: [
+    { role: 'Full Stack Developer', matchPercentage: 85, reason: 'Strong React + Python combination' },
+    { role: 'Software Engineer', matchPercentage: 78, reason: 'Solid fundamentals, needs DSA polish' },
+    { role: 'Frontend Developer', matchPercentage: 90, reason: 'React + HTML/CSS is a perfect match' },
+  ],
+  nextSteps: [
+    'Start LeetCode easy problems daily to build DSA confidence',
+    'Build one full-stack project to showcase on GitHub',
+    'Learn Docker basics — it appears in most SWE job descriptions',
+  ],
+};
+
+export const DEMO_SKILL_GAP = {
+  overallGapScore: 58,
+  estimatedTimeToClose: '3-4 months',
+  topPrioritySkill: 'Data Structures & Algorithms',
+  targetRoleRequirements: [
+    { skill: 'Data Structures & Algorithms', importance: 'Critical',    proficiencyNeeded: 'intermediate' },
+    { skill: 'System Design',               importance: 'Critical',    proficiencyNeeded: 'beginner'     },
+    { skill: 'Python / Java / C++',         importance: 'Critical',    proficiencyNeeded: 'intermediate' },
+    { skill: 'SQL & Databases',             importance: 'Important',   proficiencyNeeded: 'intermediate' },
+    { skill: 'React / Frontend',            importance: 'Important',   proficiencyNeeded: 'intermediate' },
+    { skill: 'REST APIs',                   importance: 'Important',   proficiencyNeeded: 'beginner'     },
+    { skill: 'Docker / Kubernetes',         importance: 'Important',   proficiencyNeeded: 'beginner'     },
+    { skill: 'Cloud (AWS / GCP)',           importance: 'Important',   proficiencyNeeded: 'beginner'     },
+    { skill: 'Version Control (Git)',       importance: 'Important',   proficiencyNeeded: 'intermediate' },
+    { skill: 'CI/CD Pipelines',             importance: 'Nice-to-have', proficiencyNeeded: 'beginner'   },
+  ],
+  gaps: [
+    { skill: 'Data Structures & Algorithms', severity: 'Critical', description: 'DSA is tested in every SWE interview. Arrays, Trees, Graphs, DP are must-knows.', estimatedLearnTime: '6-8 weeks' },
+    { skill: 'System Design',               severity: 'Critical', description: 'Design scalable systems like URL shorteners, chat apps, and CDNs.', estimatedLearnTime: '4-6 weeks' },
+    { skill: 'Docker & Kubernetes',         severity: 'Moderate', description: 'Containerization is standard in modern engineering teams.', estimatedLearnTime: '2-3 weeks' },
+    { skill: 'REST API Design',             severity: 'Moderate', description: 'Building and consuming APIs is a core daily task for SWEs.', estimatedLearnTime: '1-2 weeks' },
+    { skill: 'Cloud Basics (AWS/GCP)',      severity: 'Moderate', description: 'Most companies deploy on cloud; basic knowledge is expected.', estimatedLearnTime: '2-3 weeks' },
+    { skill: 'TypeScript',                  severity: 'Minor',    description: 'TypeScript adoption is growing rapidly in modern codebases.', estimatedLearnTime: '1 week' },
+  ],
+  matchedSkills: ['Python', 'JavaScript', 'React', 'SQL', 'Git', 'HTML/CSS'],
+  quickWins: ['REST API Design', 'TypeScript', 'Docker basics'],
+};
+
+export const DEMO_LEARNING_PATH = {
+  title: 'Software Engineer Readiness Roadmap',
+  totalWeeks: 14,
+  finalGoal: 'Be interview-ready for top Software Engineer roles at product companies',
+  phases: [
+    {
+      phase: 1,
+      title: 'Strengthen DSA Foundations',
+      weeks: 'Week 1-4',
+      focus: 'Arrays, Strings, Linked Lists, Recursion, Binary Search',
+      milestone: 'Solve 50 LeetCode Easy/Medium problems confidently',
+      topics: [
+        { id: 'topic_1', name: 'Arrays & Strings Patterns',    type: 'Practice', resource: 'NeetCode 150',            resourceUrl: 'https://neetcode.io/practice',                  estimatedHours: 10, description: 'Sliding window, two pointers, prefix sums' },
+        { id: 'topic_2', name: 'Linked Lists & Stacks',        type: 'Course',   resource: 'CS Dojo - DSA Series',    resourceUrl: 'https://www.youtube.com/c/CSDojo',              estimatedHours: 6,  description: 'Classic linked list operations and stack/queue problems' },
+        { id: 'topic_3', name: 'Recursion & Backtracking',     type: 'Practice', resource: 'LeetCode Recursion Path', resourceUrl: 'https://leetcode.com/explore/learn/card/recursion-i/', estimatedHours: 8, description: 'Tree recursion, backtracking templates' },
+        { id: 'topic_4', name: 'Binary Search Mastery',        type: 'Reading',  resource: 'Binary Search Guide',     resourceUrl: 'https://cp-algorithms.com/num_methods/binary_search.html', estimatedHours: 4, description: 'Binary search on arrays and answers' },
+      ],
+    },
+    {
+      phase: 2,
+      title: 'Advanced DSA + REST APIs',
+      weeks: 'Week 5-8',
+      focus: 'Trees, Graphs, Dynamic Programming, and API Development',
+      milestone: 'Solve Medium-level graph/DP problems and build a REST API project',
+      topics: [
+        { id: 'topic_5', name: 'Trees & Binary Trees',         type: 'Course',   resource: 'Abdul Bari DSA - YouTube',   resourceUrl: 'https://www.youtube.com/@abdul_bari',         estimatedHours: 8,  description: 'BFS, DFS, BST, tree traversal patterns' },
+        { id: 'topic_6', name: 'Graphs & Shortest Path',       type: 'Practice', resource: 'NeetCode Graphs',            resourceUrl: 'https://neetcode.io/roadmap',                estimatedHours: 10, description: 'BFS, DFS, Dijkstra, Union-Find' },
+        { id: 'topic_7', name: 'Dynamic Programming Intro',    type: 'Course',   resource: 'Aditya Verma DP Playlist',   resourceUrl: 'https://www.youtube.com/playlist?list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go', estimatedHours: 12, description: 'Memoization, tabulation, classic DP patterns' },
+        { id: 'topic_8', name: 'Build a REST API with Node.js',type: 'Project',  resource: 'Traversy Media Node Guide', resourceUrl: 'https://www.youtube.com/watch?v=ENrzD9HAZK4', estimatedHours: 8, description: 'CRUD API with Express.js and MongoDB' },
+      ],
+    },
+    {
+      phase: 3,
+      title: 'System Design + Cloud',
+      weeks: 'Week 9-11',
+      focus: 'System design fundamentals and cloud/DevOps basics',
+      milestone: 'Design 5 common systems and deploy a project on AWS',
+      topics: [
+        { id: 'topic_9',  name: 'System Design Fundamentals', type: 'Course',   resource: 'Gaurav Sen - System Design', resourceUrl: 'https://www.youtube.com/@gkcs',              estimatedHours: 10, description: 'Scalability, load balancers, databases, caching' },
+        { id: 'topic_10', name: 'Docker for Developers',      type: 'Course',   resource: 'TechWorld with Nana Docker', resourceUrl: 'https://www.youtube.com/watch?v=3c-iBn73dDE', estimatedHours: 6, description: 'Containers, images, docker-compose' },
+        { id: 'topic_11', name: 'AWS Essentials',             type: 'Course',   resource: 'FreeCodeCamp AWS Course',    resourceUrl: 'https://www.youtube.com/watch?v=3hLmDS179YE', estimatedHours: 8, description: 'EC2, S3, Lambda, RDS basics' },
+        { id: 'topic_12', name: 'TypeScript Crash Course',    type: 'Course',   resource: 'Traversy TypeScript 2024',  resourceUrl: 'https://www.youtube.com/watch?v=BCg4U1FzYbM', estimatedHours: 4, description: 'Types, interfaces, generics — essential for modern JS' },
+      ],
+    },
+    {
+      phase: 4,
+      title: 'Interview Prep & Final Projects',
+      weeks: 'Week 12-14',
+      focus: 'Mock interviews, resume-worthy projects, HR preparation',
+      milestone: 'Complete 2 portfolio projects, pass 3 mock interviews',
+      topics: [
+        { id: 'topic_13', name: 'Mock DSA Interviews',        type: 'Practice', resource: 'Pramp (free mock interviews)', resourceUrl: 'https://www.pramp.com',                    estimatedHours: 10, description: 'Peer-to-peer mock technical interviews' },
+        { id: 'topic_14', name: 'Build Full-Stack Portfolio Project', type: 'Project', resource: 'Your PathPilot AI App!', resourceUrl: 'https://github.com',                      estimatedHours: 15, description: 'Ship a real project to showcase on GitHub & resume' },
+        { id: 'topic_15', name: 'System Design Practice',     type: 'Practice', resource: 'Exponent System Design',    resourceUrl: 'https://www.youtube.com/@tryExponent',      estimatedHours: 6, description: 'Practice designing YouTube, Twitter, WhatsApp' },
+        { id: 'topic_16', name: 'HR & Behavioural Prep',      type: 'Reading',  resource: 'Cracking the PM Interview', resourceUrl: 'https://www.amazon.com/dp/0984782818',       estimatedHours: 4, description: 'STAR stories, common HR questions, salary negotiation' },
+      ],
+    },
+  ],
+};
+
+export const DEMO_PROJECTS = {
+  projects: [
+    {
+      id: 'proj_1',
+      title: 'Personal Budget Tracker',
+      difficulty: 'Beginner',
+      category: 'Web App',
+      description: 'A full-stack web app to track income and expenses with categories, monthly summaries, and simple charts.',
+      techStack: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
+      estimatedHours: 20,
+      skills: ['React State Management', 'REST APIs', 'MongoDB CRUD', 'Data Visualization'],
+      features: ['Add/edit/delete transactions', 'Category pie charts', 'Monthly summary dashboard', 'Export to CSV'],
+      whyImpressive: 'Demonstrates full-stack skills with real data persistence — a complete, usable product.',
+      githubIdea: 'React frontend → Express API → MongoDB. Use Chart.js for visualizations.',
+    },
+    {
+      id: 'proj_2',
+      title: 'URL Shortener with Analytics',
+      difficulty: 'Beginner',
+      category: 'API',
+      description: 'A URL shortening service like bit.ly that also tracks click counts, geographic data, and referrer info.',
+      techStack: ['Node.js', 'Express', 'Redis', 'PostgreSQL'],
+      estimatedHours: 18,
+      skills: ['REST API Design', 'Redis Caching', 'Database Design', 'Analytics'],
+      features: ['Shorten URLs with custom aliases', 'Click tracking & analytics', 'QR code generation', 'Rate limiting'],
+      whyImpressive: 'Classic system design problem turned into a real product — shows backend architecture knowledge.',
+      githubIdea: 'Hash function for short codes, Redis for fast lookups, PostgreSQL for analytics storage.',
+    },
+    {
+      id: 'proj_3',
+      title: 'Real-time Collaborative Code Editor',
+      difficulty: 'Intermediate',
+      category: 'Web App',
+      description: 'A browser-based code editor where multiple users can edit code together in real-time, with syntax highlighting and language support.',
+      techStack: ['React', 'Socket.io', 'Node.js', 'Monaco Editor'],
+      estimatedHours: 35,
+      skills: ['WebSockets', 'Real-time Systems', 'Monaco Editor API', 'Operational Transform'],
+      features: ['Real-time multi-user editing', 'Syntax highlighting for 10+ languages', 'Active users indicator', 'Code execution sandbox'],
+      whyImpressive: 'WebSockets + real-time sync is a hot topic in interviews — this proves you can build it.',
+      githubIdea: 'Use Socket.io for sync, Monaco Editor for code editing, simple room-based architecture.',
+    },
+    {
+      id: 'proj_4',
+      title: 'Job Application Tracker',
+      difficulty: 'Intermediate',
+      category: 'Web App',
+      description: 'A Kanban-board style app to track job applications through stages (Applied → Interview → Offer → Rejected) with notes and reminders.',
+      techStack: ['React', 'TypeScript', 'Supabase', 'Tailwind'],
+      estimatedHours: 28,
+      skills: ['TypeScript', 'Drag-and-drop UI', 'Supabase Auth', 'State Management'],
+      features: ['Drag-and-drop Kanban board', 'Email reminders', 'Company notes & contacts', 'Statistics dashboard'],
+      whyImpressive: 'Solves a real problem every student faces — shows you build products that matter.',
+      githubIdea: 'Use react-beautiful-dnd for drag-drop, Supabase for auth + DB, TypeScript throughout.',
+    },
+    {
+      id: 'proj_5',
+      title: 'AI Resume Analyzer & Optimizer',
+      difficulty: 'Advanced',
+      category: 'ML Project',
+      description: 'Upload a resume and a job description — the AI analyzes keyword match, ATS score, and suggests specific improvements to increase interview chances.',
+      techStack: ['Python', 'FastAPI', 'Google Gemini', 'React', 'spaCy'],
+      estimatedHours: 50,
+      skills: ['LLM Integration', 'NLP', 'FastAPI', 'PDF Parsing', 'React'],
+      features: ['PDF resume parsing', 'ATS keyword score', 'AI-powered suggestions', 'Tailored cover letter generation'],
+      whyImpressive: 'AI + real-world problem = instant conversation starter in interviews. Shows you can work with LLMs.',
+      githubIdea: 'PyMuPDF for PDF parsing, Gemini API for analysis, FastAPI backend, React frontend.',
+    },
+    {
+      id: 'proj_6',
+      title: 'Distributed Task Queue System',
+      difficulty: 'Advanced',
+      category: 'CLI Tool',
+      description: 'Build a mini task queue system like Celery — workers pick up background jobs (email sending, image processing) from a queue with retry logic.',
+      techStack: ['Python', 'Redis', 'Docker', 'PostgreSQL', 'FastAPI'],
+      estimatedHours: 45,
+      skills: ['Distributed Systems', 'Redis Pub/Sub', 'Docker Compose', 'Concurrency', 'System Design'],
+      features: ['Priority job queues', 'Worker auto-scaling', 'Job retry with backoff', 'Dashboard to monitor jobs'],
+      whyImpressive: 'Shows deep backend and system design knowledge — the kind of thing senior engineers build.',
+      githubIdea: 'Redis as message broker, FastAPI for job submission, multiple worker Docker containers.',
+    },
+  ],
+};
+
+export const DEMO_CAREER_PATHS = {
+  personalityInsight:
+    'You are a builder at heart — you enjoy creating tangible products that solve real problems. Your mix of frontend skills and growing backend knowledge points toward a full-stack or software engineering career where you can own features end-to-end.',
+  recommendedPath: 'path_1',
+  industryTrends: [
+    'AI integration is now expected in most software products — engineers who understand LLM APIs are highly valued.',
+    'Remote-first companies are expanding hiring globally, making Indian SWE talent more competitive than ever.',
+    'Full-stack TypeScript (React + Node) is rapidly becoming the standard for startup engineering teams.',
+  ],
+  careerPaths: [
+    {
+      id: 'path_1',
+      role: 'Software Engineer',
+      field: 'Technology',
+      matchScore: 82,
+      whyItFits:
+        'Your Python, JavaScript, and React skills form the exact foundation SWE roles need. With DSA practice and one solid project, you\'re placement-ready.',
+      salaryRange: { entry: '$75,000 - $110,000', mid: '$120,000 - $160,000', senior: '$170,000 - $250,000' },
+      growthOutlook: 'Excellent',
+      topCompanies: ['Google', 'Microsoft', 'Atlassian', 'Swiggy', 'Razorpay'],
+      dayInLife: 'Design and implement features, review code, debug production issues, collaborate with PMs and designers in sprint ceremonies.',
+      requiredSkills: ['Data Structures & Algorithms', 'System Design', 'JavaScript/Python', 'Git', 'SQL'],
+      transitionSteps: [
+        'Solve 100 LeetCode problems (focus on Medium difficulty)',
+        'Build one full-stack project and deploy it with a live URL',
+        'Apply to 20 companies with a tailored resume and referrals',
+      ],
+      alternativeRoles: ['Full Stack Developer', 'Backend Engineer'],
+    },
+    {
+      id: 'path_2',
+      role: 'Full Stack Developer',
+      field: 'Product & Startups',
+      matchScore: 90,
+      whyItFits:
+        'Your React + Python combination is exactly what startups need. Full-stack devs at early-stage companies ship entire features, which suits your builder personality.',
+      salaryRange: { entry: '$65,000 - $95,000', mid: '$100,000 - $145,000', senior: '$150,000 - $220,000' },
+      growthOutlook: 'Excellent',
+      topCompanies: ['Zepto', 'CRED', 'Groww', 'Notion', 'Linear'],
+      dayInLife: 'Build both frontend UI in React and backend APIs in Node/Python, ship features rapidly, work directly with founders and users.',
+      requiredSkills: ['React', 'Node.js / Python', 'SQL + NoSQL', 'REST APIs', 'Docker'],
+      transitionSteps: [
+        'Build a full-stack project end-to-end and deploy it publicly',
+        'Learn basic DevOps — Docker, CI/CD, deployment on Vercel/Railway',
+        'Target Series A/B startups — they value generalists over specialists',
+      ],
+      alternativeRoles: ['Frontend Engineer', 'Product Engineer'],
+    },
+    {
+      id: 'path_3',
+      role: 'Machine Learning Engineer',
+      field: 'AI & Data Science',
+      matchScore: 65,
+      whyItFits:
+        'Your Python skills and interest in AI give you a head start. This path needs more math and ML frameworks, but it\'s achievable with 6-8 months of focused learning.',
+      salaryRange: { entry: '$85,000 - $120,000', mid: '$130,000 - $180,000', senior: '$190,000 - $300,000' },
+      growthOutlook: 'Excellent',
+      topCompanies: ['OpenAI', 'Google DeepMind', 'Sarvam AI', 'Ola Krutrim', 'Hugging Face'],
+      dayInLife: 'Train and evaluate models, run experiments, write data pipelines, collaborate with researchers to productionize ML systems.',
+      requiredSkills: ['Python', 'PyTorch / TensorFlow', 'Statistics & Linear Algebra', 'MLOps', 'SQL'],
+      transitionSteps: [
+        'Take fast.ai or Andrew Ng\'s ML course to build foundations',
+        'Complete a Kaggle competition to prove applied ML skills',
+        'Build an end-to-end ML project deployed as a web app',
+      ],
+      alternativeRoles: ['Data Scientist', 'AI Research Engineer'],
+    },
+  ],
+};
