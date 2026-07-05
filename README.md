@@ -41,7 +41,7 @@ sequenceDiagram
 
 Our dashboard provides a premium, dark-mode experience with all necessary metrics at a glance.
 
-![Dashboard Preview](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80)
+![Dashboard Preview](./assets/images/dashboard.png)
 
 ## Features
 
